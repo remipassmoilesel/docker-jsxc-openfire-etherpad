@@ -13,10 +13,14 @@ var xmppResource = "jsxcExampleClient";
 
 var webAdminUrl = "http://" + domain + ":9090/";
 var consoleAdminUrl = "http://" + domain + ":9091/";
+var etherpadUrl = "http://" + domain + ":9001/";
 
 $(function() {
 
     console.log("Initialisation");
+
+    // activer les panneau Jquery UI du fichier index
+    $( "#tabs" ).tabs();
 
 
     // initialisation de JSXC
@@ -66,6 +70,8 @@ $(function() {
         '<a target="_blank" href="' + webAdminUrl + '">' + webAdminUrl + '</a>');
     appendToParamDisplay('Administration console Openfire',
         '<a target="_blank" href="' + consoleAdminUrl + '">' + consoleAdminUrl + '</a>');
+    appendToParamDisplay('Etherpad',
+        '<a target="_blank" href="' + etherpadUrl + '">' + etherpadUrl + '</a>');
 
 });
 

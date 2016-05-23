@@ -1,6 +1,9 @@
-# Docker image for JSXC / Openfire
+# Docker image for JSXC / Etherpad / Openfire
 
-Small Dockerfile to test the XMPP client JSXC and the server Openfire.
+Small Docker file to test:
+* The XMPP client JSXC
+* Etherpad
+* The server Openfire.
 
 Run and enjoy !
 

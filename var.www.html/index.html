@@ -44,44 +44,69 @@ Fonctionnement, avec captures d'écran
 
 <div id="content">
 
-    <h1>Prototype JSXC / Openfire</h1>
+    <h1>Prototype JSXC / Etherpad / Openfire</h1>
 
-    <div class="textContent">Destiné à la découverte de l'utilisation du client XMPP Jsxc et du serveur
-        Openfire.</div>
+    <div class="textContent">Destiné à la découverte d'outils de communication en temps réel.</div>
 
-    <table class="table-striped" id="availablesAccounts">
-
-        <tr>
-            <th colspan="2">Comptes disponibles</th>
-        </tr>
-
-        <tr>
-            <th>Login</th>
-            <th>Mot de passe</th>
-        </tr>
-
-    </table>
+    <div id="tabs">
+        <ul>
+            <li><a href="#tabs-3">Introduction à JSXC</a></li>
+            <li><a href="#tabs-4">Introduction à Etherpad</a></li>
+            <li><a href="#tabs-1">Comptes XMPP disponibles</a></li>
+            <li><a href="#tabs-2">Informations utiles</a></li>
+        </ul>
+        <div id="tabs-1">
 
 
-    <!-- bouton de connexion -->
-    <div>
-        <button id="connexionButton">
-            Connexion
-        </button>
+            <table class="table-striped" id="availablesAccounts">
+
+                <tr>
+                    <th>Login</th>
+                    <th>Mot de passe</th>
+                </tr>
+
+                <!-- voir dans le script js/main.js -->
+
+            </table>
+        </div>
+
+
+        <div id="tabs-2">
+            <table class="table-striped" id="infoDisplay">
+
+                <tr>
+                    <th>Nom</th>
+                    <th>Valeur</th>
+                </tr>
+
+                <!-- voir dans le script js/main.js -->
+
+            </table>
+        </div>
+
+
+        <div id="tabs-3">
+
+            <!-- bouton de connexion -->
+            <div>
+                <button id="connexionButton">
+                    Connexion
+                </button>
+            </div>
+
+            <p>Mauris eleifend est et turpis. Duis id erat. Suspendisse potenti. Aliquam vulputate, pede vel vehicula accumsan, mi neque rutrum erat, eu congue orci lorem eget lorem. Vestibulum non ante. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Fusce sodales. Quisque eu urna vel enim commodo pellentesque. Praesent eu risus hendrerit ligula tempus pretium. Curabitur lorem enim, pretium nec, feugiat nec, luctus a, lacus.</p>
+            <p>Duis cursus. Maecenas ligula eros, blandit nec, pharetra at, semper at, magna. Nullam ac lacus. Nulla facilisi. Praesent viverra justo vitae neque. Praesent blandit adipiscing velit. Suspendisse potenti. Donec mattis, pede vel pharetra blandit, magna ligula faucibus eros, id euismod lacus dolor eget odio. Nam scelerisque. Donec non libero sed nulla mattis commodo. Ut sagittis. Donec nisi lectus, feugiat porttitor, tempor ac, tempor vitae, pede. Aenean vehicula velit eu tellus interdum rutrum. Maecenas commodo. Pellentesque nec elit. Fusce in lacus. Vivamus a libero vitae lectus hendrerit hendrerit.</p>
+        </div>
+
+
+        <div id="tabs-4">
+            <p>Mauris eleifend est et turpis. Duis id erat. Suspendisse potenti. Aliquam vulputate, pede vel vehicula accumsan, mi neque rutrum erat, eu congue orci lorem eget lorem. Vestibulum non ante. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Fusce sodales. Quisque eu urna vel enim commodo pellentesque. Praesent eu risus hendrerit ligula tempus pretium. Curabitur lorem enim, pretium nec, feugiat nec, luctus a, lacus.</p>
+            <p>Duis cursus. Maecenas ligula eros, blandit nec, pharetra at, semper at, magna. Nullam ac lacus. Nulla facilisi. Praesent viverra justo vitae neque. Praesent blandit adipiscing velit. Suspendisse potenti. Donec mattis, pede vel pharetra blandit, magna ligula faucibus eros, id euismod lacus dolor eget odio. Nam scelerisque. Donec non libero sed nulla mattis commodo. Ut sagittis. Donec nisi lectus, feugiat porttitor, tempor ac, tempor vitae, pede. Aenean vehicula velit eu tellus interdum rutrum. Maecenas commodo. Pellentesque nec elit. Fusce in lacus. Vivamus a libero vitae lectus hendrerit hendrerit.</p>
+        </div>
+
+
     </div>
 
-    <table class="table-striped" id="infoDisplay">
-
-        <tr>
-            <th colspan="2">Informations utiles</th>
-        </tr>
-
-        <tr>
-            <th>Nom</th>
-            <th>Valeur</th>
-        </tr>
-
-    </table>
 
 </div>
 
