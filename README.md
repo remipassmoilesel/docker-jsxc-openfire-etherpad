@@ -1,4 +1,4 @@
-# Image de test JSXC / Openfire
+# Docker image for JSXC / Openfire
 
 Small Dockerfile to test the XMPP client JSXC and the server Openfire.
 
