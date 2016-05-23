@@ -6,7 +6,7 @@ LABEL name="JSXC/Openfire" description="Une image permettant de tester JSXC / Op
 
 # installer et configurer apache
 RUN apt-get update \
-    && apt-get -y install apache2 openjdk-7-jre \
+    && apt-get -y install apache2 openjdk-7-jre curl wget vim git xz-utils \
     && update-rc.d apache2 enable
 
 # installer openfire
@@ -21,7 +21,7 @@ RUN chmod +x /opt/docker-entrypoint.sh
 
 ENTRYPOINT /opt/docker-entrypoint.sh
 
-# ports nécéssaires
+# ouvrir les ports nécéssaires
 EXPOSE 80 7070 9090 9091
 
 
