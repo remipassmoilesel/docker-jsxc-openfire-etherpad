@@ -15,7 +15,7 @@ ADD opt.openfire/ /opt/openfire
 # installer JSXC
 ADD var.www.html /var/www/html/
 
-# installer etherpad
+# installer node et etherpad
 RUN cd opt/ \
     && git clone https://github.com/ether/etherpad-lite/ \
     && wget https://nodejs.org/dist/v4.4.4/node-v4.4.4-linux-x64.tar.xz \
