@@ -3,6 +3,9 @@
 # lundi 23 mai 2016, 10:07:27 (UTC+0200)
 
 echo
+echo "Construire le conteneur et le lancer."
+
+echo
 echo "Construction du conteneur ..."
 echo
 
