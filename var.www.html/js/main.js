@@ -73,5 +73,15 @@ $(function() {
     appendToParamDisplay('Etherpad',
         '<a target="_blank" href="' + etherpadUrl + '">' + etherpadUrl + '</a>');
 
+
+    var appendToModifications = function(modification, status){
+        $('#modifications').append("<tr><td>" + (modification || '') + "</td><td>" + (status || '')+ "</td><tr/>");
+    };
+    appendToModifications('Notifications de bureau');
+    appendToModifications("Création d'espace Etherpad");
+
+
+
+
 });
 

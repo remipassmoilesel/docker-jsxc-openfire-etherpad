@@ -1,4 +1,4 @@
-# Docker image for JSXC / Etherpad / Openfire
+# Docker image with JSXC / Openfire / Etherpad
 
 Small Docker file to test:
 * The XMPP client JSXC
@@ -14,6 +14,9 @@ Both under free license:
 ```
 # Install Docker on Ubuntu:
 # curl -fsSL https://get.docker.com/ | sh
+
+# Download and setup an Openfire server (accounts, ...) with
+an embedded database. Then copy it in opt.openfire/
 
 # Run a container
 ./build-and-launch.sh
