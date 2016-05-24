@@ -3,11 +3,9 @@ FROM ubuntu:14.04
 MAINTAINER remipassmoilesel
 LABEL name="JSXC/Openfire/Etherpad" description="Simple Dockerfile to test JSXC / Openfire / Etherpad"
 
-
 # installer et configurer apache
 RUN apt-get update \
-    && apt-get -y install apache2 openjdk-7-jre curl wget vim git xz-utils \
-    && update-rc.d apache2 enable
+    && apt-get -y install apache2 openjdk-7-jre curl wget vim git xz-utils
 
 # installer openfire
 ADD opt.openfire/ /opt/openfire
