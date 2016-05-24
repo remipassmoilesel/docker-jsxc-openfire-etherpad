@@ -1,7 +1,7 @@
 
 FROM ubuntu:14.04
 MAINTAINER remipassmoilesel
-LABEL name="JSXC/Openfire" description="Une image permettant de tester JSXC / Openfire"
+LABEL name="JSXC/Openfire/Etherpad" description="Simple Dockerfile to test JSXC / Openfire / Etherpad"
 
 
 # installer et configurer apache
@@ -28,6 +28,7 @@ ADD opt.etherpad.settings.json /opt/etherpad/settings.json
 ADD opt.docker-entrypoint.sh /opt/docker-entrypoint.sh
 RUN chmod +x /opt/docker-entrypoint.sh
 
+# Le script lancé au démarrage du conteneur
 ENTRYPOINT /opt/docker-entrypoint.sh
 
 # ouvrir les ports nécéssaires

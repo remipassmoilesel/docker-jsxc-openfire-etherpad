@@ -3,7 +3,7 @@
 Small Docker file to test:
 * The XMPP client JSXC
 * Etherpad
-* The server Openfire.
+* The server Openfire
 
 Run and enjoy !
 
