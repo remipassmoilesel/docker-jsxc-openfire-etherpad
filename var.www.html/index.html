@@ -2,159 +2,56 @@
 <html>
 
 <head>
-    <title>JSXC example application</title>
-    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+  <title>JSXC example application</title>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
 
-    <link href="css/bootstrap.min.css" media="all" rel="stylesheet" type="text/css" />
+  <link href="css/bootstrap.min.css" media="all" rel="stylesheet" type="text/css"/>
 
-    <!-- require:dependencies -->
-    <link href="jsxc/css/jquery-ui.min.css" media="all" rel="stylesheet" type="text/css" />
-    <link href="jsxc/css/jsxc.css" media="all" rel="stylesheet" type="text/css" />
-    <!--  endrequire -->
+  <!-- require:dependencies -->
+  <link href="jsxc/css/jquery-ui.min.css" media="all" rel="stylesheet" type="text/css"/>
+  <link href="jsxc/css/jsxc.css" media="all" rel="stylesheet" type="text/css"/>
+  <!--  endrequire -->
 
-    <link href="css/main.css" media="all" rel="stylesheet" type="text/css" />
+  <link href="css/main.css" media="all" rel="stylesheet" type="text/css"/>
 
-    <!-- require:dependencies -->
-    <script src="jsxc/lib/jquery.min.js"></script>
-    <script src="jsxc/lib/jquery.ui.min.js"></script>
-    <script src="jsxc/lib/jquery.slimscroll.js"></script>
-    <script src="jsxc/lib/jquery.fullscreen.js"></script>
-    <script src="jsxc/lib/jsxc.dep.js"></script>
-    <!--  endrequire -->
+  <!-- require:dependencies -->
+  <script src="jsxc/lib/jquery.min.js"></script>
+  <script src="jsxc/lib/jquery.ui.min.js"></script>
+  <script src="jsxc/lib/jquery.slimscroll.js"></script>
+  <script src="jsxc/lib/jquery.fullscreen.js"></script>
+  <script src="jsxc/lib/jsxc.dep.js"></script>
+  <!--  endrequire -->
 
-    <script src="js/bootstrap.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
 
-    <!-- jsxc library -->
-    <script src="jsxc/jsxc.min.js"></script>
+  <!-- jsxc library -->
+  <script src="jsxc/jsxc.min.js"></script>
 
-    <!-- init script -->
-    <script src="js/main.js"></script>
+  <!-- init script -->
+  <script src="js/main.js"></script>
 
 </head>
 
 <body>
 
-<!--
-Console d'administration
-Comptes disponibles
-Fonctionnement, avec captures d'écran
--->
-
 <div id="content">
 
-    <h1>Prototype JSXC / Etherpad / Openfire</h1>
+  <h1>Docker image to test JSXC, Openfire and Etherpad </h1>
 
-    <div class="textContent">Destiné à la découverte d'outils de communication en temps réel.</div>
+  <button id="connexionButton">
+    Connect to JSXC client
+  </button>
 
-    <div id="tabs">
+  <div id="etherpadBlock">
+    <input id="padName" placeholder="Pad name" type="text"/>
+    <input id="openPad" value="Open a new pad" type="button"/>
+  </div>
 
-        <ul>
-            <li><a href="#tabs-3">Introduction à JSXC</a></li>
-            <li><a href="#tabs-4">Introduction à Etherpad</a></li>
-            <li><a href="#tabs-1">Comptes XMPP disponibles</a></li>
-            <li><a href="#tabs-2">Informations utiles</a></li>
-        </ul>
+  <div id="informationsBlock">
 
-
-        <!-- Comptes disponibles -->
-        <div id="tabs-1">
-            <table class="table-striped" id="availablesAccounts">
-
-                <tr>
-                    <th>Login</th>
-                    <th>Mot de passe</th>
-                </tr>
-
-                <!-- voir dans le script js/main.js -->
-
-            </table>
-        </div>
-
-        <!-- Informations utiles -->
-        <div id="tabs-2">
-            <table class="table-striped" id="infoDisplay">
-
-                <tr>
-                    <th>Nom</th>
-                    <th>Valeur</th>
-                </tr>
-
-                <!-- voir dans le script js/main.js -->
-
-            </table>
-        </div>
-
-        <!-- Introduction à JSXC -->
-        <div id="tabs-3">
-
-            <!-- bouton de connexion -->
-            <div>
-                <button id="connexionButton">
-                    Connexion au client JSXC
-                </button>
-            </div>
-
-            <p>
-                JSXC est un client XMPP distribué sous licence MIT. A utiliser de préférence avec Firefox et Chrome / Chromium.</p>
-
-            <h2>Connexion</h2>
-            <div>
-                <ol>
-                    <li>Choisissez un compte disponible dans l'onglet "Comptes XMPP disponibles"</li>
-                    <li>Cliquez sur le bouton "Connexion au client JSXC"</li>
-                    <li>Entre le pseudo et le mot de passe "azerty"</li>
-                    <li>Ouvrez et refermez JSXC en cliquant sur la barre de fermeture transparente à la droite de l'écran</li>
-                </ol>
-            </div>
-
-
-            <h2>Ajouter un contact</h2>
-            <div>
-                <p>
-                    Pour communiquer avec quelqu'un vous devez d'abord l'ajouter à vos contacts:
-                </p>
-                <pre>Menu > Ajouter un contact > Saisir le login du contact</pre>
-
-                <img src="images/add-contact.png" />
-            </div>
-
-            <h2>Discuter</h2>
-            <div>
-                <p>
-                    Pour discuter avec quelqu'un, ajoutez le à vos contacts puis cliquez sur son nom à droite de l'écran.
-                    Si vous utilisez Chrome ou Firefox vous pouvez essayer de démarer une vidéo conférence.
-                    Cliquez sur l'icône en forme de caméra en haut de l'espace de conversation.
-                </p>
-                <p>
-                    Cette fonctionnalité n'est pas
-                    encore correctement configurée, les connexions échouent selon la configuration réseau.
-                </p>
-
-            </div>
-
-            <h2>Modifications en prévision</h2>
-            <div>
-            <table class="table-striped" id="modifications">
-
-                <tr>
-                    <th></th>
-                    <th></th>
-                </tr>
-
-                <!-- voir dans le script js/main.js -->
-
-            </table>
-            </div>
-        </div>
-
-
-        <div id="tabs-4">
-            <p>Etherpad est un outils de collaboration en ligne. Il est disponible à l'adresse suivante sur le port 9001.</p>
-            <p>Exemple: http://127.0.0.1:9001/p/qu-il-est-beau-mon-etherpad </p>
-        </div>
-    </div>
+  </div>
 
 </div>
 

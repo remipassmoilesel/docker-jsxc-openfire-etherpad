@@ -1,0 +1,185 @@
+[
+    {
+        "Id": "e6b8b1c9b768017b448937d7890c5c3cda98b38c5460350b1cc8cfec98e0047f",
+        "Created": "2016-09-05T10:54:31.053419958Z",
+        "Path": "/bin/sh",
+        "Args": [
+            "-c",
+            "/opt/docker-entrypoint.sh"
+        ],
+        "State": {
+            "Status": "running",
+            "Running": true,
+            "Paused": false,
+            "Restarting": false,
+            "OOMKilled": false,
+            "Dead": false,
+            "Pid": 32311,
+            "ExitCode": 0,
+            "Error": "",
+            "StartedAt": "2016-09-05T10:54:31.333849505Z",
+            "FinishedAt": "0001-01-01T00:00:00Z"
+        },
+        "Image": "sha256:025ff4504c1890c34ef1ed7c98cb0b1a06b48d1d13b56b3bc80bbd57d35d6d18",
+        "ResolvConfPath": "/var/lib/docker/containers/e6b8b1c9b768017b448937d7890c5c3cda98b38c5460350b1cc8cfec98e0047f/resolv.conf",
+        "HostnamePath": "/var/lib/docker/containers/e6b8b1c9b768017b448937d7890c5c3cda98b38c5460350b1cc8cfec98e0047f/hostname",
+        "HostsPath": "/var/lib/docker/containers/e6b8b1c9b768017b448937d7890c5c3cda98b38c5460350b1cc8cfec98e0047f/hosts",
+        "LogPath": "/var/lib/docker/containers/e6b8b1c9b768017b448937d7890c5c3cda98b38c5460350b1cc8cfec98e0047f/e6b8b1c9b768017b448937d7890c5c3cda98b38c5460350b1cc8cfec98e0047f-json.log",
+        "Name": "/sad_northcutt",
+        "RestartCount": 0,
+        "Driver": "aufs",
+        "MountLabel": "",
+        "ProcessLabel": "",
+        "AppArmorProfile": "",
+        "ExecIDs": null,
+        "HostConfig": {
+            "Binds": null,
+            "ContainerIDFile": "",
+            "LogConfig": {
+                "Type": "json-file",
+                "Config": {}
+            },
+            "NetworkMode": "default",
+            "PortBindings": {},
+            "RestartPolicy": {
+                "Name": "no",
+                "MaximumRetryCount": 0
+            },
+            "AutoRemove": false,
+            "VolumeDriver": "",
+            "VolumesFrom": null,
+            "CapAdd": null,
+            "CapDrop": null,
+            "Dns": [],
+            "DnsOptions": [],
+            "DnsSearch": [],
+            "ExtraHosts": null,
+            "GroupAdd": null,
+            "IpcMode": "",
+            "Cgroup": "",
+            "Links": null,
+            "OomScoreAdj": 0,
+            "PidMode": "",
+            "Privileged": false,
+            "PublishAllPorts": false,
+            "ReadonlyRootfs": false,
+            "SecurityOpt": null,
+            "UTSMode": "",
+            "UsernsMode": "",
+            "ShmSize": 67108864,
+            "Runtime": "runc",
+            "ConsoleSize": [
+                0,
+                0
+            ],
+            "Isolation": "",
+            "CpuShares": 0,
+            "Memory": 0,
+            "CgroupParent": "",
+            "BlkioWeight": 0,
+            "BlkioWeightDevice": null,
+            "BlkioDeviceReadBps": null,
+            "BlkioDeviceWriteBps": null,
+            "BlkioDeviceReadIOps": null,
+            "BlkioDeviceWriteIOps": null,
+            "CpuPeriod": 0,
+            "CpuQuota": 0,
+            "CpusetCpus": "",
+            "CpusetMems": "",
+            "Devices": [],
+            "DiskQuota": 0,
+            "KernelMemory": 0,
+            "MemoryReservation": 0,
+            "MemorySwap": 0,
+            "MemorySwappiness": -1,
+            "OomKillDisable": false,
+            "PidsLimit": 0,
+            "Ulimits": null,
+            "CpuCount": 0,
+            "CpuPercent": 0,
+            "IOMaximumIOps": 0,
+            "IOMaximumBandwidth": 0
+        },
+        "GraphDriver": {
+            "Name": "aufs",
+            "Data": null
+        },
+        "Mounts": [],
+        "Config": {
+            "Hostname": "e6b8b1c9b768",
+            "Domainname": "",
+            "User": "",
+            "AttachStdin": false,
+            "AttachStdout": false,
+            "AttachStderr": false,
+            "ExposedPorts": {
+                "7070/tcp": {},
+                "80/tcp": {},
+                "9001/tcp": {},
+                "9090/tcp": {},
+                "9091/tcp": {}
+            },
+            "Tty": false,
+            "OpenStdin": false,
+            "StdinOnce": false,
+            "Env": [
+                "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin"
+            ],
+            "Cmd": null,
+            "Image": "jsxc-etherpad-openfire",
+            "Volumes": null,
+            "WorkingDir": "",
+            "Entrypoint": [
+                "/bin/sh",
+                "-c",
+                "/opt/docker-entrypoint.sh"
+            ],
+            "OnBuild": null,
+            "Labels": {
+                "description": "Simple Dockerfile to test JSXC / Openfire / Etherpad",
+                "name": "JSXC/Openfire/Etherpad"
+            }
+        },
+        "NetworkSettings": {
+            "Bridge": "",
+            "SandboxID": "30c55aeaf2640591e56a5f053c5b452c74e62153188bc8a507e588ca496ae672",
+            "HairpinMode": false,
+            "LinkLocalIPv6Address": "",
+            "LinkLocalIPv6PrefixLen": 0,
+            "Ports": {
+                "7070/tcp": null,
+                "80/tcp": null,
+                "9001/tcp": null,
+                "9090/tcp": null,
+                "9091/tcp": null
+            },
+            "SandboxKey": "/var/run/docker/netns/30c55aeaf264",
+            "SecondaryIPAddresses": null,
+            "SecondaryIPv6Addresses": null,
+            "EndpointID": "8c7aa0a9d39687b54f0c40233d21fa1163396196c59e35d8b6003d64302a00e8",
+            "Gateway": "172.17.0.1",
+            "GlobalIPv6Address": "",
+            "GlobalIPv6PrefixLen": 0,
+            "IPAddress": "172.17.0.4",
+            "IPPrefixLen": 16,
+            "IPv6Gateway": "",
+            "MacAddress": "02:42:ac:11:00:04",
+            "Networks": {
+                "bridge": {
+                    "IPAMConfig": null,
+                    "Links": null,
+                    "Aliases": null,
+                    "NetworkID": "3786a10eff06d10edb0cb8d3cba1b45166ec3d24eeab6a9a2096601abd063a94",
+                    "EndpointID": "8c7aa0a9d39687b54f0c40233d21fa1163396196c59e35d8b6003d64302a00e8",
+                    "Gateway": "172.17.0.1",
+                    "IPAddress": "172.17.0.4",
+                    "IPPrefixLen": 16,
+                    "IPv6Gateway": "",
+                    "GlobalIPv6Address": "",
+                    "GlobalIPv6PrefixLen": 0,
+                    "MacAddress": "02:42:ac:11:00:04"
+                }
+            }
+        }
+    }
+]
