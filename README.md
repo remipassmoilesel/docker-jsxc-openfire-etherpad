@@ -1,4 +1,4 @@
-# Docker image with JSXC XMPP client, Openfire XMPP client and Etherpad
+# Docker image with JSXC XMPP client, Openfire XMPP server and Etherpad
 
 ## Introduction
 
@@ -42,6 +42,40 @@ Openfire installation example:
 
 ```
 
+Final file tree must look like this:
+
+```
+.
+├── build-and-launch.sh
+├── container_informations.txt
+├── Dockerfile
+├── memos -> ../memos
+├── opt.docker-entrypoint.sh
+├── opt.etherpad.settings.json
+├── opt.openfire
+│   ├── bin
+│   ├── changelog.html
+│   ├── conf
+│   ├── documentation
+│   ├── embedded-db
+│   ├── lib
+│   ├── LICENSE.html
+│   ├── logs
+│   ├── plugins
+│   ├── README.html
+│   └── resources
+├── README.md
+└── var.www.html
+    ├── ajax
+    ├── css
+    ├── favicon.ico
+    ├── fonts
+    ├── index.html
+    ├── js
+    └── jsxc
+
+16 directories, 11 files
+```
 
 ## Credits 
 
