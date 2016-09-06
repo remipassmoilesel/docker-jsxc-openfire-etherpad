@@ -25,6 +25,11 @@ Run and enjoy !
 
 ```
 
+## Hey Djoe !
+
+You can also try a modified JSXC client, with collaborative text edition and 
+ videoconference here: https://github.com/remipassmoilesel/djoe
+
 ## Why not install Openfire in Dockerfile ?
 
 To let you setup accounts and other parameters ...
@@ -81,6 +86,6 @@ Final file tree must look like this:
 
 All under free licenses:
 
-* JSXC: MIT (https://www.jsxc.org/)
-* Openfire: APL 2 (https://www.igniterealtime.org)
-* Etherpad: APL 2 (http://etherpad.org/)
+* JSXC: MIT https://www.jsxc.org/
+* Openfire: APL 2 https://www.igniterealtime.org
+* Etherpad: APL 2 http://etherpad.org/
